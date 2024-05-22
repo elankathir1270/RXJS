@@ -19,6 +19,13 @@ import { MapComponent } from './map/map.component';
 import { CombainComponent } from './combain/combain.component';
 import { PracticeComponent } from './practice/practice.component';
 import { SkipComponent } from './skip/skip.component';
+import { AjaxComponent } from './creation-operators/ajax/ajax.component';
+import { OfFromComponent } from './creation-operators/of-from/of-from.component';
+import { FromEventIntervalComponent } from './creation-operators/from-event-interval/from-event-interval.component';
+import { RangeTimerIifComponent } from './creation-operators/range-timer-iif/range-timer-iif.component';
+import { MergeConcatComponent } from './join-creation-operators/merge-concat/merge-concat.component';
+import { CombainlatestForkJoinComponent } from './join-creation-operators/combainlatest-fork-join/combainlatest-fork-join.component';
+import { BufferSeriesComponent } from './transformation-operators/buffer-series/buffer-series.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,14 @@ import { SkipComponent } from './skip/skip.component';
     MapComponent,
     CombainComponent,
     PracticeComponent,
-    SkipComponent
+    SkipComponent,
+    AjaxComponent,
+    OfFromComponent,
+    FromEventIntervalComponent,
+    RangeTimerIifComponent,
+    MergeConcatComponent,
+    CombainlatestForkJoinComponent,
+    BufferSeriesComponent
   ],
   imports: [
     FormsModule,

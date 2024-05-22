@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Observables in Angular</h3>
+  <button class="btn btn-success" (click)="getAsyncData()"> Get Data</button>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let x of data">{{ x }}</li>
+
+  </ul>
+</div>

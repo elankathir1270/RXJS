@@ -26,6 +26,7 @@ import { RangeTimerIifComponent } from './creation-operators/range-timer-iif/ran
 import { MergeConcatComponent } from './join-creation-operators/merge-concat/merge-concat.component';
 import { CombainlatestForkJoinComponent } from './join-creation-operators/combainlatest-fork-join/combainlatest-fork-join.component';
 import { BufferSeriesComponent } from './transformation-operators/buffer-series/buffer-series.component';
+import { MapSeriesComponent } from './transformation-operators/map-series/map-series.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { BufferSeriesComponent } from './transformation-operators/buffer-series/
     RangeTimerIifComponent,
     MergeConcatComponent,
     CombainlatestForkJoinComponent,
-    BufferSeriesComponent
+    BufferSeriesComponent,
+    MapSeriesComponent
   ],
   imports: [
     FormsModule,

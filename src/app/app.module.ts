@@ -31,6 +31,7 @@ import { SkipSeriesComponent } from './filtering-operators/skip-series/skip-seri
 import { TakeSeriesComponent } from './filtering-operators/take-series/take-series.component';
 import { DistinctSeriesComponent } from './filtering-operators/distinct-series/distinct-series.component';
 import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debounce-throttle/audit-debounce-throttle.component';
+import { FilterElementAtComponent } from './filtering-operators/filter-element-at/filter-element-at.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debo
     SkipSeriesComponent,
     TakeSeriesComponent,
     DistinctSeriesComponent,
-    AuditDebounceThrottleComponent
+    AuditDebounceThrottleComponent,
+    FilterElementAtComponent
   ],
   imports: [
     FormsModule,

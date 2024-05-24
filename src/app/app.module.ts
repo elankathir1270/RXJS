@@ -27,6 +27,10 @@ import { MergeConcatComponent } from './join-creation-operators/merge-concat/mer
 import { CombainlatestForkJoinComponent } from './join-creation-operators/combainlatest-fork-join/combainlatest-fork-join.component';
 import { BufferSeriesComponent } from './transformation-operators/buffer-series/buffer-series.component';
 import { MapSeriesComponent } from './transformation-operators/map-series/map-series.component';
+import { SkipSeriesComponent } from './filtering-operators/skip-series/skip-series.component';
+import { TakeSeriesComponent } from './filtering-operators/take-series/take-series.component';
+import { DistinctSeriesComponent } from './filtering-operators/distinct-series/distinct-series.component';
+import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debounce-throttle/audit-debounce-throttle.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { MapSeriesComponent } from './transformation-operators/map-series/map-se
     MergeConcatComponent,
     CombainlatestForkJoinComponent,
     BufferSeriesComponent,
-    MapSeriesComponent
+    MapSeriesComponent,
+    SkipSeriesComponent,
+    TakeSeriesComponent,
+    DistinctSeriesComponent,
+    AuditDebounceThrottleComponent
   ],
   imports: [
     FormsModule,

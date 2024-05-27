@@ -34,6 +34,9 @@ import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debo
 import { FilterElementAtComponent } from './filtering-operators/filter-element-at/filter-element-at.component';
 import { TapDelayToArrayComponent } from './utility-operators/tap-delay-to-array/tap-delay-to-array.component';
 import { EveryFindFindIndexComponent } from './conditional-boolean-operators/every-find-find-index/every-find-find-index.component';
+import { SubjectsComponent } from './subjects/subjects/subjects.component';
+import { ShowTaskComponent } from './subjects/show-task/show-task.component';
+import { AddTaskComponent } from './subjects/add-task/add-task.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,10 @@ import { EveryFindFindIndexComponent } from './conditional-boolean-operators/eve
     AuditDebounceThrottleComponent,
     FilterElementAtComponent,
     TapDelayToArrayComponent,
-    EveryFindFindIndexComponent
+    EveryFindFindIndexComponent,
+    SubjectsComponent,
+    ShowTaskComponent,
+    AddTaskComponent
   ],
   imports: [
     FormsModule,

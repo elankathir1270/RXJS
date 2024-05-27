@@ -32,6 +32,7 @@ import { TakeSeriesComponent } from './filtering-operators/take-series/take-seri
 import { DistinctSeriesComponent } from './filtering-operators/distinct-series/distinct-series.component';
 import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debounce-throttle/audit-debounce-throttle.component';
 import { FilterElementAtComponent } from './filtering-operators/filter-element-at/filter-element-at.component';
+import { TapDelayToArrayComponent } from './utility-operators/tap-delay-to-array/tap-delay-to-array.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { FilterElementAtComponent } from './filtering-operators/filter-element-a
     TakeSeriesComponent,
     DistinctSeriesComponent,
     AuditDebounceThrottleComponent,
-    FilterElementAtComponent
+    FilterElementAtComponent,
+    TapDelayToArrayComponent
   ],
   imports: [
     FormsModule,

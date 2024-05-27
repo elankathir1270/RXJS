@@ -33,6 +33,7 @@ import { DistinctSeriesComponent } from './filtering-operators/distinct-series/d
 import { AuditDebounceThrottleComponent } from './filtering-operators/audit-debounce-throttle/audit-debounce-throttle.component';
 import { FilterElementAtComponent } from './filtering-operators/filter-element-at/filter-element-at.component';
 import { TapDelayToArrayComponent } from './utility-operators/tap-delay-to-array/tap-delay-to-array.component';
+import { EveryFindFindIndexComponent } from './conditional-boolean-operators/every-find-find-index/every-find-find-index.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { TapDelayToArrayComponent } from './utility-operators/tap-delay-to-array
     DistinctSeriesComponent,
     AuditDebounceThrottleComponent,
     FilterElementAtComponent,
-    TapDelayToArrayComponent
+    TapDelayToArrayComponent,
+    EveryFindFindIndexComponent
   ],
   imports: [
     FormsModule,

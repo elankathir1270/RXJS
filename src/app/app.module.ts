@@ -37,6 +37,7 @@ import { EveryFindFindIndexComponent } from './conditional-boolean-operators/eve
 import { SubjectsComponent } from './subjects/subjects/subjects.component';
 import { ShowTaskComponent } from './subjects/show-task/show-task.component';
 import { AddTaskComponent } from './subjects/add-task/add-task.component';
+import { TypeSubjectsComponent } from './subjects/type-subjects/type-subjects.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { AddTaskComponent } from './subjects/add-task/add-task.component';
     EveryFindFindIndexComponent,
     SubjectsComponent,
     ShowTaskComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    TypeSubjectsComponent
   ],
   imports: [
     FormsModule,

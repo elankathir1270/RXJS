@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
-import { audit, debounceTime, fromEvent, interval, map, throttleTime } from 'rxjs';
+import {
+  audit,
+  debounceTime,
+  fromEvent,
+  interval,
+  map,
+  throttleTime,
+} from 'rxjs';
 
 @Component({
   selector: 'app-audit-debounce-throttle',
   templateUrl: './audit-debounce-throttle.component.html',
-  styleUrls: ['./audit-debounce-throttle.component.css']
+  styleUrls: ['./audit-debounce-throttle.component.css'],
 })
 export class AuditDebounceThrottleComponent {
-
   ngOnInit() {
-
     /*
       It emits values only after specifed duration completes,
       it ignores values if it emits within the duration and
@@ -18,10 +23,14 @@ export class AuditDebounceThrottleComponent {
     */
     const searchEl = document.getElementById('search');
 
-    let obs = fromEvent(searchEl,'input');
+    let obs = fromEvent(searchEl, 'input');
 
-    obs.pipe(map((el:any) => el.target.value),debounceTime(2000)).subscribe((res) => console.log(res));
-
+    obs
+      .pipe(
+        map((el: any) => el.target.value),
+        debounceTime(2000)
+      )
+      .subscribe((res) => console.log(res));
   }
 
   doAudit() {
@@ -29,7 +38,9 @@ export class AuditDebounceThrottleComponent {
     Its same like debounce it emits value only after specifed duration
     diffrence is it wont reset timer, you get values everytime specifed duration completes
     */
-    interval(1000).pipe(audit(() => interval(2000))).subscribe((res) => console.log(res));
+    interval(1000)
+      .pipe(audit(() => interval(2000)))
+      .subscribe((res) => console.log(res));
   }
 
   doThrottleTime() {
@@ -42,5 +53,4 @@ export class AuditDebounceThrottleComponent {
 
     obs.pipe(throttleTime(2000)).subscribe((res) => console.log(res));
   }
-
 }

@@ -10,8 +10,8 @@ export class BufferSeriesComponent {
 
   doBuffer() {
     /*
-      It's used to collect the values from souce observable and process them all together
-      untill the second observable send notification message to stop buffer.
+      It's used to collect the values from source observable and process them all together
+      until the second observable send notification message to stop buffer.
       then emit the collected values as array.
     */
     const bufferTrigger = new Subject<void>();

@@ -9,8 +9,8 @@ import { concat, fromEvent, interval, merge, take } from 'rxjs';
 export class MergeConcatComponent {
   doMerge() {
     /*
-    this operator used to combain multiple observables, concurrently emit observables
-    into a single stream, it does not wait for one observable compleation to subscribe
+    this operator used to combine multiple observables, concurrently emit observables
+    into a single stream, it does not wait for one observable completion to subscribe
     another one. It emit the result as they come.
      */
 
@@ -31,8 +31,8 @@ export class MergeConcatComponent {
 
   doConcat() {
     /*
-    this operator used to combain multiple observables, sequentially emit observables
-    into a single stream, it wont subscribe another observable untill it compleate one.
+    this operator used to combine multiple observables, sequentially emit observables
+    into a single stream, it wont subscribe another observable until it complete one.
     It emit the result in order.
      */
 

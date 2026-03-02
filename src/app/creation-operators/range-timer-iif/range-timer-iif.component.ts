@@ -35,6 +35,7 @@ export class RangeTimerIifComponent {
 
     // const obs = timer(1000,1000).pipe(take(3));
 
+
     // document.addEventListener('click', () => {
 
     //   obs.subscribe((res) => console.log(res));

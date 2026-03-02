@@ -41,7 +41,7 @@ export class MapSeriesComponent {
 
     /*
     It takes an observable map that observable into another observable
-    then it subscribes all mapped observable sequentialy, it will wait to compleate
+    then it subscribes all mapped observable sequentially, it will wait to complete
     a subscription till then it wont subscribe next observable.
     then it emits the observable in single stream in order.
     */
@@ -67,10 +67,10 @@ export class MapSeriesComponent {
   doSwitchMap() {
 
     /*
-    It takes an obsesrvable map that observable into another observable
+    It takes an observable map that observable into another observable
     then it subscribes all the mapped observable, but this only cares about the
     latest one, ignores rest of the observables.
-    it does not wait for the previous call to compleate before making new one.
+    it does not wait for the previous call to complete before making new one.
     */
 
    function getData(arg :string) {
@@ -99,7 +99,7 @@ export class MapSeriesComponent {
     /*
     It takes an observable map that observable into another observable
     then it subscribes all the mapped observable, but this only cares about
-    first observable, ignores subsequent requests untill it completes first one.
+    first observable, ignores subsequent requests until it completes first one.
     when the first call completely over only then it concentrates next one.
     */
 

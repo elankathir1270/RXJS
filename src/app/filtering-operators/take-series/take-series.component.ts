@@ -11,7 +11,7 @@ export class TakeSeriesComponent {
   doTake() {
     /*
     Take allows you to get the first emissions from the source observable
-    based on the specifed numbers.
+    based on the specified numbers.
     */
     //interval(1000).pipe(take(5)).subscribe((res) => console.log(res));
 
@@ -23,7 +23,7 @@ export class TakeSeriesComponent {
   doTakeLast() {
 
     /*
-    Its same like take only diffrence is it gets last emissions from the source observables
+    Its same like take only difference is it gets last emissions from the source observables
     */
 
     interval(1000).pipe(take(10),takeLast(4)).subscribe((res) => console.log(res));
@@ -32,7 +32,7 @@ export class TakeSeriesComponent {
   doTakeWhile() {
 
     /*
-    takes emitted value from source observable untill the given expression is false
+    takes emitted value from source observable until the given expression is false
     */
 
     const obs = interval(1000).pipe(take(11));
@@ -43,6 +43,10 @@ export class TakeSeriesComponent {
   doTakeUntil() {
 
     /*
+    The takeUntil operator gives us a way to cancel a subscription to an observable.
+    We add the operator to our observable pipeline and provide it with a subject.
+    Whenever that subject emits a value the subscription will be cancelled.
+
     It takes emitted value from the source observable till it get a notification message from
     second observable like subject.
     */
